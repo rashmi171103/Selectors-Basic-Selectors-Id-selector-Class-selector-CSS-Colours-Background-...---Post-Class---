@@ -6,4 +6,115 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+
+
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+@media  screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+        /* display: block; */
+    }
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #74959A;
+    
+}
+.right-section{
+    grid-column: span 1/span 2;
+    background-color: #f7f7f7;
+    
+}
+
+.left-content{
+    padding: 1rem ;
+}
+.profile-image{
+    display: block ;
+    margin: auto;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700px;
+    text-align: center;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+}
+.designation{
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media .icon{
+    display: inline;
+    padding: 10px 55px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.skill-item{
+    padding: 0.5rem;
+    width: 252px;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.about-sect p{
+    padding: 0.5rem;
+}
+.education-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.5rem;
+}
+.uni-name{
+    padding: 10px;
+}
+.year-span{
+    padding: 10px;
+}
+.title-2{
+    padding: 0.5rem;
+}
+.exper-sect p{
+    padding: 0.5rem;
+}
